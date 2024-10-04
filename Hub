@@ -1,0 +1,88 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownAnimated/jnkjvk/refs/heads/main/vhddx"))()
+
+
+
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local player = Players.LocalPlayer
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local notbutton = Instance.new("TextButton")
+
+-- Properties:
+
+main.Name = "main"
+main.Parent = screenGui
+main.BackgroundColor3 = Color3.fromRGB(118, 214, 255)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.0883133337, 0, 0.140946046, 0)
+main.Size = UDim2.new(0, 242, 0, 292)
+main.Active = true
+main.Draggable = true
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(0, 253, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, -6, 0, 292)
+
+Frame_2.Parent = main
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 253, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(1.02479339, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, -6, 0, 292)
+
+Frame_3.Parent = main
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 253, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.0247933883, 0, 0.979452074, 0)
+Frame_3.Size = UDim2.new(0, 254, 0, 6)
+
+Label.Name = "Label"
+Label.Parent = main
+Label.BackgroundColor3 = Color3.fromRGB(0, 253, 255)
+Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Label.BorderSizePixel = 0
+Label.Position = UDim2.new(-0.0123966942, 0, 0, 0)
+Label.Size = UDim2.new(0, 248, 0, 11)
+Label.Font = Enum.Font.Unknown
+Label.Text = "HyperHub|byYumi"
+Label.TextColor3 = Color3.fromRGB(122, 129, 255)
+Label.TextScaled = true
+Label.TextSize = 37.8  -- Original size 14.0 * 2.7 = 37.8
+Label.TextWrapped = true
+Label.TextXAlignment = Enum.TextXAlignment.Left
+Label.TextYAlignment = Enum.TextYAlignment.Top
+
+notbutton.Name = "notbutton"
+notbutton.Parent = main
+notbutton.BackgroundColor3 = Color3.fromRGB(122, 129, 255)
+notbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+notbutton.BorderSizePixel = 0
+notbutton.Position = UDim2.new(0, 0, 0.818493128, 0)
+notbutton.Size = UDim2.new(0, 242, 0, 46)
+notbutton.Font = Enum.Font.SourceSans
+notbutton.Text = "HItbox and ESP"
+notbutton.TextColor3 = Color3.fromRGB(0, 253, 255)
+notbutton.TextSize = 14.000
+notbutton.TextStrokeColor3 = Color3.fromRGB(115, 252, 214)
+notbutton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownAnimated/HyperHubX/main/HyperHub", true))()
+end)
+
+-- toggle thing
+UserInputService.InputBegan:Connect(function(input)
+      if (input.KeyCode == Enum.KeyCode.RightShift) then
+            screenGui.Enabled = not screenGui.Enabled
+      end;
+end);
