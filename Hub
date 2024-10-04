@@ -77,7 +77,7 @@ notbutton.TextColor3 = Color3.fromRGB(0, 253, 255)
 notbutton.TextSize = 14.000
 notbutton.TextStrokeColor3 = Color3.fromRGB(115, 252, 214)
 notbutton.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownAnimated/HyperHubX/main/HyperHub", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownAnimated/jakwdgiuaw/refs/heads/main/sefsdf", true))()
 end)
 
 -- toggle thing
