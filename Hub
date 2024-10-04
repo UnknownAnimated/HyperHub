@@ -1,7 +1,4 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownAnimated/jnkjvk/refs/heads/main/vhddx"))()
-
-
-
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local player = Players.LocalPlayer
